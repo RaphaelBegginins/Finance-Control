@@ -1,0 +1,40 @@
+# Project TODO
+
+- [x] Definir o modelo de dados unificado e isolado por usuário para contas, categorias, lançamentos, recorrências, orçamentos, metas, cartões, compras parceladas, dívidas, ativos e notificações.
+- [x] Criar e aplicar a migração de banco de dados com chaves estrangeiras e índices de propriedade por usuário.
+- [x] Reforçar a integridade de propriedade nas relações financeiras e validar que referências entre módulos pertencem ao mesmo usuário.
+- [x] Validar a estrutura final do banco após a recuperação da migração e corrigir qualquer divergência com o schema versionado.
+- [x] Implementar procedimentos protegidos para leitura e alteração dos dados financeiros, assegurando que nenhum usuário acesse registros de terceiros.
+- [x] Implementar cálculos centrais de saldo, fluxo de caixa, taxa de economia, renda comprometida, patrimônio líquido, reserva de emergência, orçamentos e projeções.
+- [x] Criar dados de demonstração opcionais, vinculados ao mesmo modelo de dados e identificados claramente como demonstração.
+- [x] Criar layout privado com menu lateral responsivo, identificação do usuário, logout e alternância entre modo claro e escuro.
+- [x] Construir dashboard com indicadores, próximos vencimentos, alertas e gráficos atualizados a partir dos dados financeiros.
+- [x] Construir módulo de lançamentos com cadastro, edição, exclusão, busca, filtros e suporte a recorrência, categoria, conta e status de pagamento.
+- [x] Construir módulo de orçamento mensal por categoria com acompanhamento de consumo, saldo disponível e alertas de proximidade do limite.
+- [x] Construir módulo de metas financeiras com progresso, aporte mensal necessário e estimativa de conclusão.
+- [x] Construir módulo de cartões, faturas e parcelamentos, incluindo limite, fechamento, vencimento e impacto futuro no fluxo de caixa.
+- [x] Construir módulo de dívidas com juros, parcelas, vencimento e simulação de amortização adicional.
+- [x] Construir módulo de patrimônio com ativos, passivos e cálculo de patrimônio líquido.
+- [x] Construir módulo de projeções financeiras em horizontes de 3 meses a 10 anos, considerando renda, recorrências, metas, dívidas, inflação e investimentos.
+- [x] Construir simulador de cenários “E se...?” com comparativo entre cenários atual, conservador, otimista e personalizado.
+- [x] Construir relatórios visuais por período e categoria e disponibilizar exportação em CSV.
+- [x] Criar calendário financeiro de recebimentos, pagamentos, vencimentos e marcos de metas.
+- [x] Implementar onboarding financeiro e estados vazios orientativos para a primeira experiência.
+- [x] Completar operações protegidas de edição e exclusão nos módulos financeiros e reforçar a integridade de propriedade das referências entre tabelas.
+- [x] Associar lançamentos recorrentes a lançamentos e expor a recorrência no fluxo de cadastro.
+- [x] Calcular estimativa de conclusão de metas pelo ritmo de aporte e aprimorar a projeção de conclusão.
+- [x] Completar o controle integrado de faturas, compras e parcelamentos e seu reflexo no fluxo de caixa futuro.
+- [x] Aplicar cálculo de amortização por juros compostos na simulação de dívidas, incluindo economia de juros por aporte extra.
+- [x] Expandir projeções para 3 meses e 10 anos, substituindo aproximações do simulador por cenários calculados a partir do motor financeiro.
+- [x] Incluir filtro de período em relatórios e marcos de metas no calendário financeiro.
+- [x] Implementar questionário de onboarding com persistência das premissas iniciais do perfil financeiro.
+- [x] Configurar o endpoint idempotente de notificações automáticas de compromissos financeiros, pronto para ativação após a publicação.
+- [x] Adicionar testes unitários para as regras de cálculo e as proteções de propriedade dos dados.
+- [x] Validar as telas em desktop e celular, revisar acessibilidade e corrigir erros encontrados.
+- [x] Salvar um checkpoint final contendo a primeira versão funcional da aplicação.
+- [ ] Publicar a aplicação e ativar o processamento diário das notificações automáticas de faturas, dívidas, recorrências, orçamentos e metas.
+- [x] Comparar o schema real do banco com o schema e a migração versionados, corrigindo qualquer divergência estrutural identificada.
+- [x] Confirmar e reforçar a identificação dos dados de demonstração em todos os registros e sua integração com os cálculos do aplicativo.
+- [x] Adicionar operações de edição protegidas para contas, categorias, metas, cartões, dívidas, ativos e recorrências.
+- [x] Considerar faturas e parcelamentos em cada período da projeção de fluxo de caixa e cobrir a regra com testes.
+- [x] Executar uma revisão explícita de acessibilidade, incluindo foco por teclado, semântica dos controles e contraste das telas principais.
